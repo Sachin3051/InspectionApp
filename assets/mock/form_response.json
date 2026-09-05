@@ -1,0 +1,983 @@
+{
+  "FormId": "FRM-CONTAINER-INSPECTION",
+  "FormName": "Container Inspection",
+  "VersionNo": "1.0",
+  "Sections": [
+    {
+      "SectionId": "S001",
+      "SectionName": "Inspection Details",
+      "DisplayOrder": 1,
+      "Questions": [
+        {
+          "QuestionId": "Q001",
+          "QuestionCode": "INVOICE_NO",
+          "QuestionText": "Invoice No",
+          "ControlType": "Textbox",
+          "IsRequired": true,
+          "DisplayOrder": 1,
+          "Options": []
+        },
+        {
+          "QuestionId": "Q002",
+          "QuestionCode": "INVOICE_DATE",
+          "QuestionText": "Invoice Date",
+          "ControlType": "Date",
+          "IsRequired": true,
+          "DisplayOrder": 2,
+          "Options": []
+        },
+        {
+          "QuestionId": "Q003",
+          "QuestionCode": "SHIPPING_LINE_/_TRUC",
+          "QuestionText": "Shipping Line / Trucking Co. Name",
+          "ControlType": "Textbox",
+          "IsRequired": true,
+          "DisplayOrder": 3,
+          "Options": []
+        },
+        {
+          "QuestionId": "Q004",
+          "QuestionCode": "SHIPPING_LINE_BOOKIN",
+          "QuestionText": "Shipping Line Booking Id",
+          "ControlType": "Textbox",
+          "IsRequired": true,
+          "DisplayOrder": 4,
+          "Options": []
+        },
+        {
+          "QuestionId": "Q005",
+          "QuestionCode": "CONTAINER_NO",
+          "QuestionText": "Container No",
+          "ControlType": "Textbox",
+          "IsRequired": true,
+          "DisplayOrder": 5,
+          "Options": []
+        },
+        {
+          "QuestionId": "Q006",
+          "QuestionCode": "CONTAINER_TYPE",
+          "QuestionText": "Container Type",
+          "ControlType": "Dropdown",
+          "IsRequired": true,
+          "DisplayOrder": 6,
+          "Options": [
+            {
+              "OptionId": "O001",
+              "OptionText": "20FT",
+              "OptionValue": "20FT",
+              "DisplayOrder": 1
+            },
+            {
+              "OptionId": "O002",
+              "OptionText": "40FT",
+              "OptionValue": "40FT",
+              "DisplayOrder": 2
+            },
+            {
+              "OptionId": "O003",
+              "OptionText": "40HC",
+              "OptionValue": "40HC",
+              "DisplayOrder": 3
+            },
+            {
+              "OptionId": "O004",
+              "OptionText": "45HC",
+              "OptionValue": "45HC",
+              "DisplayOrder": 4
+            }
+          ]
+        },
+        {
+          "QuestionId": "Q007",
+          "QuestionCode": "SENDER_/_SHIPPER",
+          "QuestionText": "Sender / Shipper",
+          "ControlType": "Textbox",
+          "IsRequired": true,
+          "DisplayOrder": 7,
+          "Options": []
+        },
+        {
+          "QuestionId": "Q008",
+          "QuestionCode": "RECEIVER_/_BUYER",
+          "QuestionText": "Receiver / Buyer",
+          "ControlType": "Textbox",
+          "IsRequired": true,
+          "DisplayOrder": 8,
+          "Options": []
+        },
+        {
+          "QuestionId": "Q009",
+          "QuestionCode": "LR_/_BILTY_NO",
+          "QuestionText": "LR / Bilty No",
+          "ControlType": "Textbox",
+          "IsRequired": true,
+          "DisplayOrder": 9,
+          "Options": []
+        },
+        {
+          "QuestionId": "Q010",
+          "QuestionCode": "BILTY_DATE",
+          "QuestionText": "Bilty Date",
+          "ControlType": "Date",
+          "IsRequired": true,
+          "DisplayOrder": 10,
+          "Options": []
+        },
+        {
+          "QuestionId": "Q011",
+          "QuestionCode": "TRUCK_NUMBER",
+          "QuestionText": "Truck Number",
+          "ControlType": "Textbox",
+          "IsRequired": true,
+          "DisplayOrder": 11,
+          "Options": []
+        },
+        {
+          "QuestionId": "Q012",
+          "QuestionCode": "TRUCK_TYPE",
+          "QuestionText": "Truck Type",
+          "ControlType": "Dropdown",
+          "IsRequired": true,
+          "DisplayOrder": 12,
+          "Options": [
+            {
+              "OptionId": "O005",
+              "OptionText": "20",
+              "OptionValue": "20",
+              "DisplayOrder": 1
+            },
+            {
+              "OptionId": "O006",
+              "OptionText": "40",
+              "OptionValue": "40",
+              "DisplayOrder": 2
+            },
+            {
+              "OptionId": "O007",
+              "OptionText": "40HC",
+              "OptionValue": "40HC",
+              "DisplayOrder": 3
+            },
+            {
+              "OptionId": "O008",
+              "OptionText": "40FT",
+              "OptionValue": "40FT",
+              "DisplayOrder": 4
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "SectionId": "S002",
+      "SectionName": "Pre Loading (Inside) Offline",
+      "DisplayOrder": 2,
+      "Questions": [
+        {
+          "QuestionId": "Q013",
+          "QuestionCode": "DRY",
+          "QuestionText": "Dry",
+          "ControlType": "Radio",
+          "IsRequired": true,
+          "DisplayOrder": 1,
+          "Options": [
+            {
+              "OptionId": "O009",
+              "OptionText": "Accepted",
+              "OptionValue": "Accepted",
+              "DisplayOrder": 1
+            },
+            {
+              "OptionId": "O010",
+              "OptionText": "Rejected",
+              "OptionValue": "Rejected",
+              "DisplayOrder": 2
+            },
+            {
+              "OptionId": "O011",
+              "OptionText": "Accepted w/ Condition",
+              "OptionValue": "Accepted w/ Condition",
+              "DisplayOrder": 3
+            },
+            {
+              "OptionId": "O012",
+              "OptionText": "Not Applicable",
+              "OptionValue": "Not Applicable",
+              "DisplayOrder": 4
+            }
+          ]
+        },
+        {
+          "QuestionId": "Q014",
+          "QuestionCode": "CLEAN",
+          "QuestionText": "Clean",
+          "ControlType": "Radio",
+          "IsRequired": true,
+          "DisplayOrder": 2,
+          "Options": [
+            {
+              "OptionId": "O013",
+              "OptionText": "Accepted",
+              "OptionValue": "Accepted",
+              "DisplayOrder": 1
+            },
+            {
+              "OptionId": "O014",
+              "OptionText": "Rejected",
+              "OptionValue": "Rejected",
+              "DisplayOrder": 2
+            },
+            {
+              "OptionId": "O015",
+              "OptionText": "Accepted w/ Condition",
+              "OptionValue": "Accepted w/ Condition",
+              "DisplayOrder": 3
+            },
+            {
+              "OptionId": "O016",
+              "OptionText": "Not Applicable",
+              "OptionValue": "Not Applicable",
+              "DisplayOrder": 4
+            }
+          ]
+        },
+        {
+          "QuestionId": "Q015",
+          "QuestionCode": "RUST_FREE",
+          "QuestionText": "Rust Free",
+          "ControlType": "Radio",
+          "IsRequired": true,
+          "DisplayOrder": 3,
+          "Options": [
+            {
+              "OptionId": "O017",
+              "OptionText": "Accepted",
+              "OptionValue": "Accepted",
+              "DisplayOrder": 1
+            },
+            {
+              "OptionId": "O018",
+              "OptionText": "Rejected",
+              "OptionValue": "Rejected",
+              "DisplayOrder": 2
+            },
+            {
+              "OptionId": "O019",
+              "OptionText": "Accepted w/ Condition",
+              "OptionValue": "Accepted w/ Condition",
+              "DisplayOrder": 3
+            },
+            {
+              "OptionId": "O020",
+              "OptionText": "Not Applicable",
+              "OptionValue": "Not Applicable",
+              "DisplayOrder": 4
+            }
+          ]
+        },
+        {
+          "QuestionId": "Q016",
+          "QuestionCode": "ODOR_FREE",
+          "QuestionText": "Odor Free",
+          "ControlType": "Radio",
+          "IsRequired": true,
+          "DisplayOrder": 4,
+          "Options": [
+            {
+              "OptionId": "O021",
+              "OptionText": "Accepted",
+              "OptionValue": "Accepted",
+              "DisplayOrder": 1
+            },
+            {
+              "OptionId": "O022",
+              "OptionText": "Rejected",
+              "OptionValue": "Rejected",
+              "DisplayOrder": 2
+            },
+            {
+              "OptionId": "O023",
+              "OptionText": "Accepted w/ Condition",
+              "OptionValue": "Accepted w/ Condition",
+              "DisplayOrder": 3
+            },
+            {
+              "OptionId": "O024",
+              "OptionText": "Not Applicable",
+              "OptionValue": "Not Applicable",
+              "DisplayOrder": 4
+            }
+          ]
+        },
+        {
+          "QuestionId": "Q017",
+          "QuestionCode": "MOISTURE_FREE",
+          "QuestionText": "Moisture Free",
+          "ControlType": "Radio",
+          "IsRequired": true,
+          "DisplayOrder": 5,
+          "Options": [
+            {
+              "OptionId": "O025",
+              "OptionText": "Accepted",
+              "OptionValue": "Accepted",
+              "DisplayOrder": 1
+            },
+            {
+              "OptionId": "O026",
+              "OptionText": "Rejected",
+              "OptionValue": "Rejected",
+              "DisplayOrder": 2
+            },
+            {
+              "OptionId": "O027",
+              "OptionText": "Accepted w/ Condition",
+              "OptionValue": "Accepted w/ Condition",
+              "DisplayOrder": 3
+            },
+            {
+              "OptionId": "O028",
+              "OptionText": "Not Applicable",
+              "OptionValue": "Not Applicable",
+              "DisplayOrder": 4
+            }
+          ]
+        },
+        {
+          "QuestionId": "Q018",
+          "QuestionCode": "NO_INSECTS_&_PESTS",
+          "QuestionText": "No Insects & Pests",
+          "ControlType": "Radio",
+          "IsRequired": true,
+          "DisplayOrder": 6,
+          "Options": [
+            {
+              "OptionId": "O029",
+              "OptionText": "Accepted",
+              "OptionValue": "Accepted",
+              "DisplayOrder": 1
+            },
+            {
+              "OptionId": "O030",
+              "OptionText": "Rejected",
+              "OptionValue": "Rejected",
+              "DisplayOrder": 2
+            },
+            {
+              "OptionId": "O031",
+              "OptionText": "Accepted w/ Condition",
+              "OptionValue": "Accepted w/ Condition",
+              "DisplayOrder": 3
+            },
+            {
+              "OptionId": "O032",
+              "OptionText": "Not Applicable",
+              "OptionValue": "Not Applicable",
+              "DisplayOrder": 4
+            }
+          ]
+        },
+        {
+          "QuestionId": "Q019",
+          "QuestionCode": "NO_WATER_LEAKAGE",
+          "QuestionText": "No Water Leakage",
+          "ControlType": "Radio",
+          "IsRequired": true,
+          "DisplayOrder": 7,
+          "Options": [
+            {
+              "OptionId": "O033",
+              "OptionText": "Accepted",
+              "OptionValue": "Accepted",
+              "DisplayOrder": 1
+            },
+            {
+              "OptionId": "O034",
+              "OptionText": "Rejected",
+              "OptionValue": "Rejected",
+              "DisplayOrder": 2
+            },
+            {
+              "OptionId": "O035",
+              "OptionText": "Accepted w/ Condition",
+              "OptionValue": "Accepted w/ Condition",
+              "DisplayOrder": 3
+            },
+            {
+              "OptionId": "O036",
+              "OptionText": "Not Applicable",
+              "OptionValue": "Not Applicable",
+              "DisplayOrder": 4
+            }
+          ]
+        },
+        {
+          "QuestionId": "Q020",
+          "QuestionCode": "NO_FLAKING_PAINT",
+          "QuestionText": "No Flaking Paint",
+          "ControlType": "Radio",
+          "IsRequired": true,
+          "DisplayOrder": 8,
+          "Options": [
+            {
+              "OptionId": "O037",
+              "OptionText": "Accepted",
+              "OptionValue": "Accepted",
+              "DisplayOrder": 1
+            },
+            {
+              "OptionId": "O038",
+              "OptionText": "Rejected",
+              "OptionValue": "Rejected",
+              "DisplayOrder": 2
+            },
+            {
+              "OptionId": "O039",
+              "OptionText": "Accepted w/ Condition",
+              "OptionValue": "Accepted w/ Condition",
+              "DisplayOrder": 3
+            },
+            {
+              "OptionId": "O040",
+              "OptionText": "Not Applicable",
+              "OptionValue": "Not Applicable",
+              "DisplayOrder": 4
+            }
+          ]
+        },
+        {
+          "QuestionId": "Q021",
+          "QuestionCode": "UNDAMAGED_FLOOR",
+          "QuestionText": "Undamaged Floor",
+          "ControlType": "Radio",
+          "IsRequired": true,
+          "DisplayOrder": 9,
+          "Options": [
+            {
+              "OptionId": "O041",
+              "OptionText": "Accepted",
+              "OptionValue": "Accepted",
+              "DisplayOrder": 1
+            },
+            {
+              "OptionId": "O042",
+              "OptionText": "Rejected",
+              "OptionValue": "Rejected",
+              "DisplayOrder": 2
+            },
+            {
+              "OptionId": "O043",
+              "OptionText": "Accepted w/ Condition",
+              "OptionValue": "Accepted w/ Condition",
+              "DisplayOrder": 3
+            },
+            {
+              "OptionId": "O044",
+              "OptionText": "Not Applicable",
+              "OptionValue": "Not Applicable",
+              "DisplayOrder": 4
+            }
+          ]
+        },
+        {
+          "QuestionId": "Q022",
+          "QuestionCode": "NO_HOLES_/_LIGHT_TES",
+          "QuestionText": "No Holes / Light Testing Done",
+          "ControlType": "Radio",
+          "IsRequired": true,
+          "DisplayOrder": 10,
+          "Options": [
+            {
+              "OptionId": "O045",
+              "OptionText": "Accepted",
+              "OptionValue": "Accepted",
+              "DisplayOrder": 1
+            },
+            {
+              "OptionId": "O046",
+              "OptionText": "Rejected",
+              "OptionValue": "Rejected",
+              "DisplayOrder": 2
+            },
+            {
+              "OptionId": "O047",
+              "OptionText": "Accepted w/ Condition",
+              "OptionValue": "Accepted w/ Condition",
+              "DisplayOrder": 3
+            },
+            {
+              "OptionId": "O048",
+              "OptionText": "Not Applicable",
+              "OptionValue": "Not Applicable",
+              "DisplayOrder": 4
+            }
+          ]
+        },
+        {
+          "QuestionId": "Q023",
+          "QuestionCode": "VENTILATION_OPENING_",
+          "QuestionText": "Ventilation Opening is Undamaged",
+          "ControlType": "Radio",
+          "IsRequired": true,
+          "DisplayOrder": 11,
+          "Options": [
+            {
+              "OptionId": "O049",
+              "OptionText": "Accepted",
+              "OptionValue": "Accepted",
+              "DisplayOrder": 1
+            },
+            {
+              "OptionId": "O050",
+              "OptionText": "Rejected",
+              "OptionValue": "Rejected",
+              "DisplayOrder": 2
+            },
+            {
+              "OptionId": "O051",
+              "OptionText": "Accepted w/ Condition",
+              "OptionValue": "Accepted w/ Condition",
+              "DisplayOrder": 3
+            },
+            {
+              "OptionId": "O052",
+              "OptionText": "Not Applicable",
+              "OptionValue": "Not Applicable",
+              "DisplayOrder": 4
+            }
+          ]
+        },
+        {
+          "QuestionId": "Q024",
+          "QuestionCode": "UNDAMAGED_BACK_SIDE_",
+          "QuestionText": "Undamaged Back Side Wall (No Dent)",
+          "ControlType": "Radio",
+          "IsRequired": true,
+          "DisplayOrder": 12,
+          "Options": [
+            {
+              "OptionId": "O053",
+              "OptionText": "Accepted",
+              "OptionValue": "Accepted",
+              "DisplayOrder": 1
+            },
+            {
+              "OptionId": "O054",
+              "OptionText": "Rejected",
+              "OptionValue": "Rejected",
+              "DisplayOrder": 2
+            },
+            {
+              "OptionId": "O055",
+              "OptionText": "Accepted w/ Condition",
+              "OptionValue": "Accepted w/ Condition",
+              "DisplayOrder": 3
+            },
+            {
+              "OptionId": "O056",
+              "OptionText": "Not Applicable",
+              "OptionValue": "Not Applicable",
+              "DisplayOrder": 4
+            }
+          ]
+        },
+        {
+          "QuestionId": "Q025",
+          "QuestionCode": "UNDAMAGED_RIGHT_SIDE",
+          "QuestionText": "Undamaged Right Side Wall (No Dent)",
+          "ControlType": "Radio",
+          "IsRequired": true,
+          "DisplayOrder": 13,
+          "Options": [
+            {
+              "OptionId": "O057",
+              "OptionText": "Accepted",
+              "OptionValue": "Accepted",
+              "DisplayOrder": 1
+            },
+            {
+              "OptionId": "O058",
+              "OptionText": "Rejected",
+              "OptionValue": "Rejected",
+              "DisplayOrder": 2
+            },
+            {
+              "OptionId": "O059",
+              "OptionText": "Accepted w/ Condition",
+              "OptionValue": "Accepted w/ Condition",
+              "DisplayOrder": 3
+            },
+            {
+              "OptionId": "O060",
+              "OptionText": "Not Applicable",
+              "OptionValue": "Not Applicable",
+              "DisplayOrder": 4
+            }
+          ]
+        },
+        {
+          "QuestionId": "Q026",
+          "QuestionCode": "UNDAMAGED_LEFT_SIDE_",
+          "QuestionText": "Undamaged Left Side Wall (No Dent)",
+          "ControlType": "Radio",
+          "IsRequired": true,
+          "DisplayOrder": 14,
+          "Options": [
+            {
+              "OptionId": "O061",
+              "OptionText": "Accepted",
+              "OptionValue": "Accepted",
+              "DisplayOrder": 1
+            },
+            {
+              "OptionId": "O062",
+              "OptionText": "Rejected",
+              "OptionValue": "Rejected",
+              "DisplayOrder": 2
+            },
+            {
+              "OptionId": "O063",
+              "OptionText": "Accepted w/ Condition",
+              "OptionValue": "Accepted w/ Condition",
+              "DisplayOrder": 3
+            },
+            {
+              "OptionId": "O064",
+              "OptionText": "Not Applicable",
+              "OptionValue": "Not Applicable",
+              "DisplayOrder": 4
+            }
+          ]
+        },
+        {
+          "QuestionId": "Q027",
+          "QuestionCode": "CONTAINER_CEILING_UN",
+          "QuestionText": "Container Ceiling Undamaged (No Dent)",
+          "ControlType": "Radio",
+          "IsRequired": true,
+          "DisplayOrder": 15,
+          "Options": [
+            {
+              "OptionId": "O065",
+              "OptionText": "Accepted",
+              "OptionValue": "Accepted",
+              "DisplayOrder": 1
+            },
+            {
+              "OptionId": "O066",
+              "OptionText": "Rejected",
+              "OptionValue": "Rejected",
+              "DisplayOrder": 2
+            },
+            {
+              "OptionId": "O067",
+              "OptionText": "Accepted w/ Condition",
+              "OptionValue": "Accepted w/ Condition",
+              "DisplayOrder": 3
+            },
+            {
+              "OptionId": "O068",
+              "OptionText": "Not Applicable",
+              "OptionValue": "Not Applicable",
+              "DisplayOrder": 4
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "SectionId": "S003",
+      "SectionName": "Pre Loading (Outside)",
+      "DisplayOrder": 3,
+      "Questions": [
+        {
+          "QuestionId": "Q028",
+          "QuestionCode": "CORNER_CASTING_UNDAM",
+          "QuestionText": "Corner Casting Undamaged",
+          "ControlType": "Radio",
+          "IsRequired": true,
+          "DisplayOrder": 1,
+          "Options": [
+            {
+              "OptionId": "O069",
+              "OptionText": "Accepted",
+              "OptionValue": "Accepted",
+              "DisplayOrder": 1
+            },
+            {
+              "OptionId": "O070",
+              "OptionText": "Rejected",
+              "OptionValue": "Rejected",
+              "DisplayOrder": 2
+            },
+            {
+              "OptionId": "O071",
+              "OptionText": "Accepted w/ Condition",
+              "OptionValue": "Accepted w/ Condition",
+              "DisplayOrder": 3
+            },
+            {
+              "OptionId": "O072",
+              "OptionText": "Not Applicable",
+              "OptionValue": "Not Applicable",
+              "DisplayOrder": 4
+            }
+          ]
+        },
+        {
+          "QuestionId": "Q029",
+          "QuestionCode": "SAFETY_PLATE_(SCS)_A",
+          "QuestionText": "Safety Plate (SCS) Available",
+          "ControlType": "Radio",
+          "IsRequired": true,
+          "DisplayOrder": 2,
+          "Options": [
+            {
+              "OptionId": "O073",
+              "OptionText": "Accepted",
+              "OptionValue": "Accepted",
+              "DisplayOrder": 1
+            },
+            {
+              "OptionId": "O074",
+              "OptionText": "Rejected",
+              "OptionValue": "Rejected",
+              "DisplayOrder": 2
+            },
+            {
+              "OptionId": "O075",
+              "OptionText": "Accepted w/ Condition",
+              "OptionValue": "Accepted w/ Condition",
+              "DisplayOrder": 3
+            },
+            {
+              "OptionId": "O076",
+              "OptionText": "Not Applicable",
+              "OptionValue": "Not Applicable",
+              "DisplayOrder": 4
+            }
+          ]
+        },
+        {
+          "QuestionId": "Q030",
+          "QuestionCode": "CONTAINER_SIDE_FRAME",
+          "QuestionText": "Container Side Frame Undamaged",
+          "ControlType": "Radio",
+          "IsRequired": true,
+          "DisplayOrder": 3,
+          "Options": [
+            {
+              "OptionId": "O077",
+              "OptionText": "Accepted",
+              "OptionValue": "Accepted",
+              "DisplayOrder": 1
+            },
+            {
+              "OptionId": "O078",
+              "OptionText": "Rejected",
+              "OptionValue": "Rejected",
+              "DisplayOrder": 2
+            },
+            {
+              "OptionId": "O079",
+              "OptionText": "Accepted w/ Condition",
+              "OptionValue": "Accepted w/ Condition",
+              "DisplayOrder": 3
+            },
+            {
+              "OptionId": "O080",
+              "OptionText": "Not Applicable",
+              "OptionValue": "Not Applicable",
+              "DisplayOrder": 4
+            }
+          ]
+        },
+        {
+          "QuestionId": "Q031",
+          "QuestionCode": "DOOR_IS_CLOSING_PROP",
+          "QuestionText": "Door is Closing Properly",
+          "ControlType": "Radio",
+          "IsRequired": true,
+          "DisplayOrder": 4,
+          "Options": [
+            {
+              "OptionId": "O081",
+              "OptionText": "Accepted",
+              "OptionValue": "Accepted",
+              "DisplayOrder": 1
+            },
+            {
+              "OptionId": "O082",
+              "OptionText": "Rejected",
+              "OptionValue": "Rejected",
+              "DisplayOrder": 2
+            },
+            {
+              "OptionId": "O083",
+              "OptionText": "Accepted w/ Condition",
+              "OptionValue": "Accepted w/ Condition",
+              "DisplayOrder": 3
+            },
+            {
+              "OptionId": "O084",
+              "OptionText": "Not Applicable",
+              "OptionValue": "Not Applicable",
+              "DisplayOrder": 4
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "SectionId": "S004",
+      "SectionName": "During Loading (Pictures)",
+      "DisplayOrder": 4,
+      "Questions": [
+        {
+          "QuestionId": "Q032",
+          "QuestionCode": "EMPTY_CONTAINER",
+          "QuestionText": "Empty Container",
+          "ControlType": "ImageUpload",
+          "IsRequired": true,
+          "DisplayOrder": 1,
+          "Options": []
+        },
+        {
+          "QuestionId": "Q033",
+          "QuestionCode": "STUFFING_STARTED",
+          "QuestionText": "Stuffing Started",
+          "ControlType": "ImageUpload",
+          "IsRequired": true,
+          "DisplayOrder": 2,
+          "Options": []
+        },
+        {
+          "QuestionId": "Q034",
+          "QuestionCode": "HALFWAY_WITH_CONTAIN",
+          "QuestionText": "Halfway With Container Number",
+          "ControlType": "ImageUpload",
+          "IsRequired": true,
+          "DisplayOrder": 3,
+          "Options": []
+        }
+      ]
+    },
+    {
+      "SectionId": "S005",
+      "SectionName": "Post Loading (Pictures)",
+      "DisplayOrder": 5,
+      "Questions": [
+        {
+          "QuestionId": "Q035",
+          "QuestionCode": "FULL_WITH_DOORS_OPEN",
+          "QuestionText": "Full With Doors Open",
+          "ControlType": "ImageUpload",
+          "IsRequired": true,
+          "DisplayOrder": 1,
+          "Options": []
+        },
+        {
+          "QuestionId": "Q036",
+          "QuestionCode": "ONE_DOOR_OPEN_WITH_C",
+          "QuestionText": "One Door Open With Container",
+          "ControlType": "ImageUpload",
+          "IsRequired": true,
+          "DisplayOrder": 2,
+          "Options": []
+        },
+        {
+          "QuestionId": "Q037",
+          "QuestionCode": "BOTH_DOORS_CLOSED",
+          "QuestionText": "Both Doors Closed",
+          "ControlType": "ImageUpload",
+          "IsRequired": true,
+          "DisplayOrder": 3,
+          "Options": []
+        },
+        {
+          "QuestionId": "Q038",
+          "QuestionCode": "WITH_LINE_SEAL",
+          "QuestionText": "With Line Seal",
+          "ControlType": "ImageUpload",
+          "IsRequired": true,
+          "DisplayOrder": 4,
+          "Options": []
+        },
+        {
+          "QuestionId": "Q039",
+          "QuestionCode": "WITH_CUSTOM_SEAL",
+          "QuestionText": "With Custom Seal",
+          "ControlType": "ImageUpload",
+          "IsRequired": true,
+          "DisplayOrder": 5,
+          "Options": []
+        }
+      ]
+    },
+    {
+      "SectionId": "S006",
+      "SectionName": "Overall Decision",
+      "DisplayOrder": 6,
+      "Questions": [
+        {
+          "QuestionId": "Q040",
+          "QuestionCode": "ACCEPTED_/_REJECTED",
+          "QuestionText": "Accepted / Rejected",
+          "ControlType": "Dropdown",
+          "IsRequired": true,
+          "DisplayOrder": 1,
+          "Options": [
+            {
+              "OptionId": "O085",
+              "OptionText": "Accepted",
+              "OptionValue": "Accepted",
+              "DisplayOrder": 1
+            },
+            {
+              "OptionId": "O086",
+              "OptionText": "Rejected",
+              "OptionValue": "Rejected",
+              "DisplayOrder": 2
+            }
+          ]
+        },
+        {
+          "QuestionId": "Q041",
+          "QuestionCode": "CHECKED_BY",
+          "QuestionText": "Checked By",
+          "ControlType": "Textbox",
+          "IsRequired": true,
+          "DisplayOrder": 2,
+          "Options": []
+        },
+        {
+          "QuestionId": "Q042",
+          "QuestionCode": "DESIGNATION",
+          "QuestionText": "Designation",
+          "ControlType": "Textbox",
+          "IsRequired": true,
+          "DisplayOrder": 3,
+          "Options": []
+        },
+        {
+          "QuestionId": "Q043",
+          "QuestionCode": "CHECKED_DATE",
+          "QuestionText": "Checked Date",
+          "ControlType": "Date",
+          "IsRequired": true,
+          "DisplayOrder": 4,
+          "Options": []
+        },
+        {
+          "QuestionId": "Q044",
+          "QuestionCode": "GENERAL_REMARK",
+          "QuestionText": "General Remark",
+          "ControlType": "Textarea",
+          "IsRequired": false,
+          "DisplayOrder": 5,
+          "Options": []
+        }
+      ]
+    }
+  ]
+}
